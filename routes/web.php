@@ -14,3 +14,5 @@
 Route::get('/', function () {
     return view('welcome');
 });
+// In routes/web.php
+Route::feeds();
