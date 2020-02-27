@@ -14,5 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
-// In routes/web.php
-Route::feeds();
+
+Route::post('/rss', 'rssUrlStoreController@storeUrl');
+Route::get('/rss/link', 'rssUrlStoreController@getUrl');
+Route::get('/rss/link{id}', 'rssUrlStoreController@getUrlByid');
