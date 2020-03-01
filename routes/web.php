@@ -18,3 +18,5 @@ Route::get('/', function () {
 Route::post('/rss', 'rssUrlStoreController@storeUrl');
 Route::get('/rss/link', 'rssUrlStoreController@getUrl');
 Route::get('/rss/link{id}', 'rssUrlStoreController@getUrlByid');
+
+Route:: get ('/scrapingdata', 'ScrapingDataController@example');
