@@ -20,8 +20,6 @@ class CreateEventsTable extends Migration
             $table->string('author');
             $table->timestamps();
 
-
-
         });
     }
 
