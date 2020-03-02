@@ -1,10 +1,14 @@
 <!DOCTYPE html>
+
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
+
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Laravel</title>
+
+        <link rel="alternate" type="application/atom+xml" title="News" href="/feed">
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -81,18 +85,17 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Instructions to use the API rssFeedsAPP
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <div>1 - To store feeds you can use the url: localhost/scrapingdata | Example: Remember to pass -> "url":"https://www.lavanguardia.com/mvc/feed/rss/home"</div>
+                    <div>2 - You can show all feeds using: localhost/scrapingdata/show or localhost/scrapingdata/show/{id} if you want to show a specific feed.   </div>
+                    <div>3 - By method DELETE you can erase a feed passing the id from the feed.</div>
+                    <div>4 - If you are offline you can show every feed you have stored. </div>
+
+                    <h1>ENJOY IT! </h1>
+
                 </div>
             </div>
         </div>
