@@ -19,7 +19,7 @@ Route::post('/rss', 'rssUrlStoreController@storeUrl');
 Route::get('/rss/link', 'rssUrlStoreController@getUrl');
 Route::get('/rss/link{id}', 'rssUrlStoreController@getUrlByid');
 
-Route::get ('/scrapingdata', 'ScrapingDataController@StoreFeeds');
+Route::post ('/scrapingdata', 'ScrapingDataController@StoreFeeds');
 Route::get('/scrapingdata/show','ScrapingDataController@showAll');
 Route::get('/scrapingdata/show/{id}','ScrapingDataController@showById');
 Route::delete('/scrapingdata/delete/{id}','ScrapingDataController@destroy');
